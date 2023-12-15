@@ -14,13 +14,14 @@ organizations:
     url: https://ai.vub.ac.be/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Willem Röpke is a PhD researcher at the Artificial Intelligence Lab at the Vrije Universiteit Brussel under the supervision of Roxana Rădulescu, Diederik M. Roijers and Ann Nowé.
+bio: Willem Röpke is a PhD researcher at the Artificial Intelligence Lab at the Vrije Universiteit Brussel interested in foundational questions on decision-making.
 
 # Interests to show in About widget
 interests:
-  - Game Theory
-  - Multi-Objective Optimisation
   - Reinforcement Learning
+  - Multi-Objective Optimisation
+  - Game Theory
+  
 
 # Education to show in About widget
 education:
@@ -64,4 +65,4 @@ email: 'willem.ropke@vub.be'
 highlight_name: true
 ---
 
-I'm a PhD researcher at the Artificial Intelligence Lab at the Vrije Universiteit Brussel under the supervision of Roxana Rădulescu, Diederik M. Roijers and Ann Nowé. My research combines insights from game theory and reinforcement learning to tackle complex decision-making scenarios. The overarching goal of my research is to develop a comprehensive understanding of multi-objective games and design computational techniques that can effectively compute or learn equilibria.
+I'm a PhD researcher at the Artificial Intelligence Lab at the Vrije Universiteit Brussel under the supervision of Roxana Rădulescu, Diederik M. Roijers and Ann Nowé. My research focuses on the intersection of multi-objective and multi-agent decision-making, where I aim to establish a theoretical foundation for these domains and develop algorithms for learning agents within them.

@@ -1,38 +1,36 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
 title: Preference Communication in Multi-Objective Normal-Form Games
-subtitle: ''
-summary: ''
+
+# Authors
+# A YAML list of author names
+# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
+# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Willem Röpke
 - Diederik M. Roijers
 - Ann Nowé
 - Roxana Rădulescu
-tags: []
-categories: []
+
+# Author notes (such as 'Equal Contribution')
+# A YAML list of notes for each author in the above `authors` list
+author_notes: []
+
 date: '2022-07-01'
-lastmod: 2022-08-02T12:24:17+02:00
-featured: false
-draft: false
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: false
+# Date to publish webpage (NOT necessarily Bibtex publication's date).
+publishDate: '2023-12-15T13:56:37.469056Z'
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-publishDate: '2022-08-02T10:24:17.461861Z'
+# Publication type.
+# A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- '2'
+- article-journal
+
+# Publication name and optional abbreviated publication name.
+publication: '*Neural Computing and Applications*'
+publication_short: ''
+
+doi: 10.1007/s00521-022-07533-6
+
 abstract: We consider preference communication in two-player multi-objective normal-form
   games. In such games, the payoffs resulting from joint actions are vector-valued.
   Taking a utility-based approach, we assume there exists a utility function for each
@@ -51,6 +49,43 @@ abstract: We consider preference communication in two-player multi-objective nor
   policies can heavily depend on the characteristics of the game that is played. Lastly,
   we find that communication naturally emerges in both cooperative and self-interested
   settings.
-publication: '*Neural Computing and Applications*'
-doi: 10.1007/s00521-022-07533-6
+
+# Summary. An optional shortened abstract.
+summary: ''
+
+tags: []
+
+# Display this page in a list of Featured pages?
+featured: false
+
+# Links
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Custom links (uncomment lines below)
+# links:
+# - name: Custom Link
+#   url: http://example.org
+
+# Publication image
+# Add an image named `featured.jpg/png` to your page's folder then add a caption below.
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
 ---
+
+Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.

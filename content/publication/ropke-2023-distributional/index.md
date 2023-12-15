@@ -1,25 +1,26 @@
 ---
-title: Multi-Objective Scheduling for Agricultural Interventions
+title: Distributional Multi-Objective Decision Making
 
 # Authors
 # A YAML list of author names
 # If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
 # write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
-- \textbfWillem \textbfRöpke
-- Samuele Pollaci
-- Bram Vandenbogaerde
-- Jiahong Li
-- Youri Coppens
+- Willem Röpke
+- Conor F. Hayes
+- Patrick Mannion
+- Enda Howley
+- Ann Nowé
+- Diederik M. Roijers
 
 # Author notes (such as 'Equal Contribution')
 # A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
-date: '2022-01-01'
+date: '2023-08-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2023-12-15T13:56:37.447802Z'
+publishDate: '2023-12-15T13:56:37.483213Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
@@ -27,10 +28,11 @@ publication_types:
 - paper-conference
 
 # Publication name and optional abbreviated publication name.
-publication: '*BNAIC/BENELEARN*'
+publication: '*Proceedings of the Thirty-Second International Joint Conference on
+  Artificial Intelligence, IJCAI-23*'
 publication_short: ''
 
-doi: ''
+doi: 10.24963/ijcai.2023/634
 
 abstract: ''
 

@@ -66,18 +66,19 @@
   abstract = {Speech-to-text, also known as Speech Recognition, is a technology that is able to recognize and transcribe spoken language into text. In subsequent steps, this transcription can be used to complete a multitude of tasks, such as providing automatic subtitles or parsing voice commands. In recent years, Speech-to-Text models have dramatically improved thanks partially to advances in Deep Learning methods. Starting from the open-source project DeepSpeech, we train speech-to-text models for Dutch, using the Corpus Gesproken Nederlands (CGN). First, we contribute a pre-processing pipeline for this dataset, to make it suitable for the task at hand, obtaining a ready-to-use speech-to-text dataset for Dutch. Second, we investigate the performance of Dutch and Flemish models trained from scratch, establishing a baseline for the CGN dataset for this task. Finally, we investigate the issue of transferring speech-to-text models between related languages. In this case, we analyse how a pre-trained English model can be transferred and fine-tuned for Dutch.}
 }
 
-@article{ropke2022preference,
-  title = {Preference Communication in Multi-Objective Normal-Form Games},
-  author = {R{\"o}pke, Willem and Roijers, Diederik M. and Now{\'e}, Ann and R{\u a}dulescu, Roxana},
-  year = {2022},
-  month = jul,
-  journal = {Neural Computing and Applications},
-  issn = {0941-0643, 1433-3058},
-  doi = {10.1007/s00521-022-07533-6},
-  abstract = {We consider preference communication in two-player multi-objective normal-form games. In such games, the payoffs resulting from joint actions are vector-valued. Taking a utility-based approach, we assume there exists a utility function for each player which maps vectors to scalar utilities and consider agents that aim to maximise the utility of expected payoff vectors. As agents typically do not know their opponent's utility function or strategy, they must learn policies to interact with each other. Inspired by Stackelberg games, we introduce four novel preference communication protocols to aid agents in arriving at adequate solutions. Each protocol describes a specific approach for one agent to communicate preferences over their actions and how another agent responds. Additionally, to study when communication emerges, we introduce a communication protocol where agents must learn when to communicate. These protocols are subsequently evaluated on a set of five benchmark games against baseline agents that do not communicate. We find that preference communication can alter the learning process and lead to the emergence of cyclic policies which had not been previously observed in this setting. We further observe that the resulting policies can heavily depend on the characteristics of the game that is played. Lastly, we find that communication naturally emerges in both cooperative and self-interested settings.},
-  copyright = {All rights reserved},
-  langid = {english},
-  file = {/Users/willemropke/Zotero/storage/YG4GLP9H/Röpke et al. - 2022 - Preference communication in multi-objective normal.pdf}
+
+@inproceedings{ropke2022multi,
+  title={Multi-Objective Scheduling for Agricultural Interventions},
+  author={\textbf{R{\"o}pke}, \textbf{Willem} and Pollaci, Samuele and Vandenbogaerde, Bram and Li, Jiahong and Coppens, Youri},
+  booktitle={BNAIC/BENELEARN},
+  year={2022}
+}
+
+@inproceedings{ropke2022communication,
+  title={Communication In Multi-Objective Games},
+  author={\textbf{Röpke}, \textbf{Willem} and Roijers, Diederik M. and R\u{a}dulescu, Roxana and Nowé, Ann},
+  booktitle={BNAIC/BENELEARN},
+  year={2022}
 }
 
 @article{ropke2022nash,
@@ -96,34 +97,48 @@
   file = {/Users/willemropke/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/Papers/On nash equilibria in normal-form games with vectorial payoffs.pdf}
 }
 
-@inproceedings{ropke2022multi,
-  title={Multi-Objective Scheduling for Agricultural Interventions},
-  author={\textbf{R{\"o}pke}, \textbf{Willem} and Pollaci, Samuele and Vandenbogaerde, Bram and Li, Jiahong and Coppens, Youri},
-  booktitle={BNAIC/BENELEARN},
-  year={2022}
+@article{ropke2022preference,
+  title = {Preference Communication in Multi-Objective Normal-Form Games},
+  author = {R{\"o}pke, Willem and Roijers, Diederik M. and Now{\'e}, Ann and R{\u a}dulescu, Roxana},
+  year = {2022},
+  month = jul,
+  journal = {Neural Computing and Applications},
+  issn = {0941-0643, 1433-3058},
+  doi = {10.1007/s00521-022-07533-6},
+  urldate = {2022-07-23},
+  abstract = {We consider preference communication in two-player multi-objective normal-form games. In such games, the payoffs resulting from joint actions are vector-valued. Taking a utility-based approach, we assume there exists a utility function for each player which maps vectors to scalar utilities and consider agents that aim to maximise the utility of expected payoff vectors. As agents typically do not know their opponent's utility function or strategy, they must learn policies to interact with each other. Inspired by Stackelberg games, we introduce four novel preference communication protocols to aid agents in arriving at adequate solutions. Each protocol describes a specific approach for one agent to communicate preferences over their actions and how another agent responds. Additionally, to study when communication emerges, we introduce a communication protocol where agents must learn when to communicate. These protocols are subsequently evaluated on a set of five benchmark games against baseline agents that do not communicate. We find that preference communication can alter the learning process and lead to the emergence of cyclic policies which had not been previously observed in this setting. We further observe that the resulting policies can heavily depend on the characteristics of the game that is played. Lastly, we find that communication naturally emerges in both cooperative and self-interested settings.},
+  copyright = {All rights reserved},
+  langid = {english},
+  file = {/Users/willemropke/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/Papers/Preference communication in multi-objective normal-form games.pdf}
 }
 
-@inproceedings{ropke2022communication,
-  title={Communication In Multi-Objective Games},
-  author={\textbf{Röpke}, \textbf{Willem} and Roijers, Diederik M. and R\u{a}dulescu, Roxana and Nowé, Ann},
-  booktitle={BNAIC/BENELEARN},
-  year={2022}
-}
-
-@misc{ropke2023bridging,
-  doi = {10.48550/ARXIV.2301.05755},
-  
-  url = {https://arxiv.org/abs/2301.05755},
-  
-  author = {\textbf{Röpke}, \textbf{Willem} and Groenland, Carla and Rădulescu, Roxana and Nowé, Ann and Roijers, Diederik M.},
-  
-  keywords = {Computer Science and Game Theory (cs.GT), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
-  title = {Bridging the Gap Between Single and Multi Objective Games},
-  
-  publisher = {arXiv},
-  
+@inproceedings{ropke2023bridging,
+  title = {Bridging the Gap between Single and Multi Objective Games},
+  booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
+  author = {R{\"o}pke, Willem and Groenland, Carla and R{\u a}dulescu, Roxana and Now{\'e}, Ann and Roijers, Diederik M.},
   year = {2023},
-  
-  copyright = {arXiv.org perpetual, non-exclusive license}
+  series = {{{AAMAS}} '23},
+  pages = {224--232},
+  publisher = {{International Foundation for Autonomous Agents and Multiagent Systems}},
+  address = {{Richland, SC}},
+  abstract = {A classic model to study strategic decision making in multi-agent systems is the normal-form game. This model can be generalised to allow for an infinite number of pure strategies leading to continuous games. Multi-objective normal-form games are another generalisation that model settings where players receive separate payoffs in more than one objective. We bridge the gap between the two models by providing a theoretical guarantee that a game from one setting can always be transformed to a game in the other. We extend the theoretical results to include guaranteed equivalence of Nash equilibria. The mapping makes it possible to apply algorithms from one field to the other. We demonstrate this by introducing a fictitious play algorithm for multi-objective games and subsequently applying it to two well-known continuous games. We believe the equivalence relation will lend itself to new insights by translating the theoretical guarantees from one formalism to another. Moreover, it may lead to new computational approaches for continuous games when a problem is more naturally solved in the succinct format of multi-objective games.},
+  copyright = {All rights reserved},
+  isbn = {978-1-4503-9432-1},
+  keywords = {continuous game,game theory,multi-objective,Nash equilibria},
+  file = {/Users/willemropke/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/Papers/Bridging the Gap Between Single and Multi Objective Games.pdf}
 }
+
+@inproceedings{ropke2023distributional,
+  title = {Distributional Multi-Objective Decision Making},
+  booktitle = {Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence, {{IJCAI-23}}},
+  author = {R{\"o}pke, Willem and Hayes, Conor F. and Mannion, Patrick and Howley, Enda and Now{\'e}, Ann and Roijers, Diederik M.},
+  editor = {Elkind, Edith},
+  year = {2023},
+  month = aug,
+  pages = {5711--5719},
+  publisher = {{International Joint Conferences on Artificial Intelligence Organization}},
+  doi = {10.24963/ijcai.2023/634},
+  copyright = {All rights reserved},
+  file = {/Users/willemropke/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/Papers/Distributional Multi-Objective Decision Making.pdf}
+}
+

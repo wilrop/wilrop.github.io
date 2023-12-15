@@ -1,38 +1,36 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
 title: On Nash Equilibria in Normal-Form Games with Vectorial Payoffs
-subtitle: ''
-summary: ''
+
+# Authors
+# A YAML list of author names
+# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
+# write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Willem Röpke
 - Diederik M. Roijers
 - Ann Nowé
 - Roxana Rădulescu
-tags: []
-categories: []
+
+# Author notes (such as 'Equal Contribution')
+# A YAML list of notes for each author in the above `authors` list
+author_notes: []
+
 date: '2022-10-01'
-lastmod: 2022-10-10T10:50:53+02:00
-featured: false
-draft: false
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ''
-  focal_point: ''
-  preview_only: false
+# Date to publish webpage (NOT necessarily Bibtex publication's date).
+publishDate: '2023-12-15T13:56:37.460895Z'
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-publishDate: '2022-10-10T08:50:41.713342Z'
+# Publication type.
+# A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- '2'
+- article-journal
+
+# Publication name and optional abbreviated publication name.
+publication: '*Autonomous Agents and Multi-Agent Systems*'
+publication_short: ''
+
+doi: 10.1007/s10458-022-09582-6
+
 abstract: We provide an in-depth study of Nash equilibria in multi-objective normal-form
   games (MONFGs), i.e., normal-form games with vectorial payoffs. Taking a utility-based
   approach, we assume that each player's utility can be modelled with a utility function
@@ -53,6 +51,43 @@ abstract: We provide an in-depth study of Nash equilibria in multi-objective nor
   adhere to different optimisation criteria. Finally, given these theoretical results,
   we construct an algorithm to compute all pure strategy Nash equilibria in MONFGs
   where players have a quasiconvex utility function.
-publication: '*Autonomous Agents and Multi-Agent Systems*'
-doi: 10.1007/s10458-022-09582-6
+
+# Summary. An optional shortened abstract.
+summary: ''
+
+tags: []
+
+# Display this page in a list of Featured pages?
+featured: false
+
+# Links
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
+
+# Custom links (uncomment lines below)
+# links:
+# - name: Custom Link
+#   url: http://example.org
+
+# Publication image
+# Add an image named `featured.jpg/png` to your page's folder then add a caption below.
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects: ['internal-project']` links to `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
 ---
+
+Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
