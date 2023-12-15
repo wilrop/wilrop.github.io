@@ -18,12 +18,12 @@ author_notes: []
 date: '2022-10-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2023-12-15T13:56:37.460895Z'
+publishDate: '2023-12-15T14:05:32.436670Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- article-journal
+- "2"
 
 # Publication name and optional abbreviated publication name.
 publication: '*Autonomous Agents and Multi-Agent Systems*'

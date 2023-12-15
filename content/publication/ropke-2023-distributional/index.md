@@ -20,12 +20,12 @@ author_notes: []
 date: '2023-08-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2023-12-15T13:56:37.483213Z'
+publishDate: '2023-12-15T14:05:32.456775Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- paper-conference
+- "1"
 
 # Publication name and optional abbreviated publication name.
 publication: '*Proceedings of the Thirty-Second International Joint Conference on
