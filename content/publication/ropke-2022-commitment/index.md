@@ -10,22 +10,17 @@ authors:
 - Roxana Radulescu
 - Ann Nowé
 - Diederik M. Roijers
-
-# Author notes (such as 'Equal Contribution')
-# A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
 date: '2022-05-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2023-12-15T14:05:32.407932Z'
+publishDate: '2024-06-17T19:23:40.604180Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- "1"
-
-# Publication name and optional abbreviated publication name.
+- '1'
 publication: '*Proceedings of the Adaptive and Learning Agents Workshop (ALA 2022)*'
 publication_short: ''
 

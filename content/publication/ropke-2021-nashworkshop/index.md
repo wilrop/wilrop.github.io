@@ -11,22 +11,17 @@ authors:
 - Diederik M. Roijers
 - Ann Nowe
 - Roxana Radulescu
-
-# Author notes (such as 'Equal Contribution')
-# A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
 date: '2021-07-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2023-12-15T14:05:32.396902Z'
+publishDate: '2024-06-17T19:23:40.415151Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- "1"
-
-# Publication name and optional abbreviated publication name.
+- '1'
 publication: '*Proceedings of the Multi-Objective Decision Making Workshop 2021 (MODeM-21)*'
 publication_short: ''
 

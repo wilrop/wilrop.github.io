@@ -7,22 +7,17 @@ title: Communication In Multi-Objective Games
 # write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Willem Röpke
-
-# Author notes (such as 'Equal Contribution')
-# A YAML list of notes for each author in the above `authors` list
 author_notes: []
 
 date: '2021-06-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2023-12-15T14:05:32.402509Z'
+publishDate: '2024-06-17T19:23:40.510910Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- "7"
-
-# Publication name and optional abbreviated publication name.
+- '7'
 publication: ''
 publication_short: ''
 
