@@ -6,7 +6,7 @@ title: Multi-Objective Scheduling for Agricultural Interventions
 # If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
 # write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
-- \textbfWillem \textbfRöpke
+- Willem Röpke
 - Samuele Pollaci
 - Bram Vandenbogaerde
 - Jiahong Li
@@ -16,7 +16,7 @@ author_notes: []
 date: '2022-01-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2024-06-17T19:23:40.890490Z'
+publishDate: '2024-06-17T19:28:32.239718Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).

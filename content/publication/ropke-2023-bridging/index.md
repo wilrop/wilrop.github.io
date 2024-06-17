@@ -16,7 +16,7 @@ author_notes: []
 date: '2023-01-01'
 
 # Date to publish webpage (NOT necessarily Bibtex publication's date).
-publishDate: '2024-06-17T19:23:41.242478Z'
+publishDate: '2024-06-17T19:28:32.593938Z'
 
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
