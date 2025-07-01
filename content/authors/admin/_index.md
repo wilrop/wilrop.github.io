@@ -20,7 +20,7 @@ bio: Willem Röpke is a PhD researcher at the Artificial Intelligence Lab at the
 interests:
   - Reinforcement Learning
   - Multi-Objective Optimisation
-  - Game Theory
+  - LLM post-training
   
 
 # Education to show in About widget
@@ -29,9 +29,6 @@ education:
     - course: Master in Computer Science
       institution: Vrije Universiteit Brussel
       year: 2021
-    - course: Bachelor in Computer Science
-      institution: Vrije Universiteit Brussel 
-      year: 2019
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -65,4 +62,4 @@ email: 'willem.ropke@vub.be'
 highlight_name: true
 ---
 
-I'm a PhD researcher at the Artificial Intelligence Lab at the Vrije Universiteit Brussel under the supervision of Roxana Rădulescu, Diederik M. Roijers and Ann Nowé. My research focuses on the intersection of multi-objective and multi-agent decision-making, where I aim to establish a theoretical foundation for these domains and develop algorithms for learning agents within them.
+I'm a final-year PhD student at the VUB AI Lab, focusing on Reinforcement Learning (RL) and multi-objective decision making. My work combines mathematical foundations with practical RL algorithms. I hold a Master’s in Computer Science, with research visits to University of Galway (multi-objective RL theory) and University of Oxford (post-training LLMs with RL).
