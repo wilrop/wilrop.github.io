@@ -1,0 +1,125 @@
+/* IBM Plex Mono font import */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+/* ------------------------------------------------------------------
+   Theme variables
+------------------------------------------------------------------ */
+:root {
+  --bg-color: #F8F9FD;
+  --text-color: #1E1E1E;
+  --accent: #0057FF;
+  --card-bg: #FFF;
+  --border: rgba(0,0,0,0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1E1E1E;
+    --text-color: #F8F9FD;
+    --accent: #6EA8FF;
+    --card-bg: #2A2A2A;
+    --border: rgba(255,255,255,0.1);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Base
+------------------------------------------------------------------ */
+*       { box-sizing: border-box; }
+html,body{ margin:0; padding:0; background:var(--bg-color); color:var(--text-color); font-family:'IBM Plex Mono',monospace; line-height:1.6; }
+a       { color:var(--accent); text-decoration:none; transition:color .2s ease; }
+a:hover { text-decoration:underline; }
+
+.container{ max-width:780px; margin:0 auto; padding:3rem 1rem; }
+h1,h2  { font-weight:600; margin:2rem 0 1rem; }
+ul      { padding-left:1.25rem; }
+
+/* ------------------------------------------------------------------
+   Header (image + intro text side‑by‑side)
+------------------------------------------------------------------ */
+header {
+  display: flex;            /* simple horizontal layout */
+  gap: 2rem;
+  align-items: flex-start;  /* top‑align the text block with the avatar */
+  flex-wrap: wrap;          /* allow wrap on narrow screens */
+}
+
+/* Avatar */
+.avatar-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;         /* circular mask */
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+/* Increase both width and height percentages to zoom further */
+.avatar {
+  position: absolute;
+  width: 150%;              /* was 150 % — try 170 – 200 % to taste */
+  height: 150%;
+  object-fit: cover;
+  /* Adjust top and left to center your face */
+  /* To center the 150% image, you start at -25% for both */
+  top: -10%;  /* Move up/down */
+  left: -30%; /* Move left/right */
+}
+
+/* Quick links */
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: -1.5rem 0 0rem;
+}
+
+.tagline{
+  /* subtle tint of the accent colour */
+  background: rgba(0, 87, 255, 0.08);      /* light mode: very pale blue */
+  color: var(--accent);
+  border: 1px solid currentColor;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 0.75rem 0 -0.5rem;
+}
+
+@media (prefers-color-scheme: dark){
+  .tagline{
+    background: rgba(110, 168, 255, 0.15); /* dark mode: slightly stronger tint */
+    /* accent text still readable on the darker backdrop */
+  }
+}
+
+/* ------------------------------------------------------------------
+   Timeline
+------------------------------------------------------------------ */
+.timeline            { list-style:none; margin:0; padding:0; position:relative; }
+.timeline::before    { content:""; position:absolute; left:5px; top:3px; width:2px; height:99%; background:var(--border); }
+.timeline-item       { position:relative; padding-left:2rem; margin-bottom:1.5rem; }
+.timeline-item::before{ content:""; position:absolute; left:0; top:4px; width:12px; height:12px; background:var(--accent); border-radius:50%; }
+.timeline-date       { font-size:.85rem; }
+.timeline-role       { font-weight:600; margin:.25rem 0 0; }
+.timeline-org        { font-size:.9rem; margin:.15rem 0; }
+.timeline-desc       { font-size:.9rem; }
+
+/* ------------------------------------------------------------------
+   Publications
+------------------------------------------------------------------ */
+.pub-list { list-style:none; padding:0; display:grid; gap:1.5rem; }
+.pub      { padding:1rem 1.25rem; background:var(--card-bg); border:1px solid var(--border); border-radius:12px; transition:border-color .2s ease, box-shadow .2s ease; }
+.pub:hover{ border-color:var(--accent); box-shadow:0 4px 10px rgba(0,0,0,.06); }
+.pub-title   { font-weight:600; margin:0; }
+.pub-authors { font-size:.9rem; margin:.25rem 0; font-style:italic; }
+.pub-venue   { font-size:.9rem; margin:.25rem 0; }
+
+.pub-actions{ display:flex; gap:1rem; flex-wrap:wrap; margin-top:.5rem; }
+.pub-actions button,.pub-actions a{ font-size:.85rem; border:none; background:none; color:var(--accent); cursor:pointer; padding:0; }
+.pub-actions button:hover{ text-decoration:underline; }
+
+pre{ background:none; border-left:2px solid var(--accent); padding-left:.75rem; overflow-x:auto; font-size:.8rem; margin-top:.75rem; display:none; white-space:pre-wrap; }
+

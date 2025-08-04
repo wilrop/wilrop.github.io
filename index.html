@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willem Röpke</title>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- RSS feed & Open Graph basics -->
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="RSS Feed">
+  <meta property="og:title" content="Willem Röpke - Researcher">
+  <meta property="og:description" content="PhD researcher in multi-objective reinforcement learning.">
+  <meta property="og:image" content="og.png">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar-wrap">
+        <img src="avatar.jpg" alt="Portrait of Willem Röpke" class="avatar">
+      </div>
+      <h1>Willem Röpke</h1>
+      <p class="tagline">
+          I'm seeking a research scientist or post-doc role in reinforcement learning, LLMs, planning, or other ambitious ML projects.</p>
+      <p>Final-year PhD researcher at the Vrije Universiteit Brussel, working on reinforcement learning, multi-objective decision making &amp; LLM post-training.</p>
+      <ul class="links">
+        <li><a href="https://twitter.com/willem_ropke" target="_blank" rel="noopener">𝕏</a></li>
+        <li><a href="https://scholar.google.com/citations?user=pa2Ddn0AAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/willem-r%C3%B6pke-056aa1172/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:willem.ropke@vub.be" target="_blank" rel="noopener">Email</a></li>
+        <li><a href="https://github.com/wilrop" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">2021 - present</div>
+          <div class="timeline-role">PhD Candidate</div>
+          <div class="timeline-org">Vrije Universiteit Brussel (VUB), <a href="https://ai.vub.ac.be" target="_blank" rel="noopener">AI Lab</a></div>
+          <div class="timeline-desc">Multi-objective RL; teaching assistant for the machine learning course.</div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">Mar 2025 - May 2025</div>
+          <div class="timeline-role">Research Visitor</div>
+          <div class="timeline-org">University of Oxford, <a href="https://foersterlab.com/" target="_blank" rel="noopener">FLAIR</a></div>
+          <div class="timeline-desc">RL post-training for large language models.</div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">Nov 2022 - Dec 2022</div>
+          <div class="timeline-role">Research Visitor</div>
+          <div class="timeline-org">University of Galway</div>
+          <div class="timeline-desc">Distributional MORL; joined the research group of Prof. Patrick Mannion.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Publications</h2>
+      <ul id="pubs" class="pub-list"></ul>
+    </section>
+  </div>
+
+  <!-- Inline publication data for easy maintenance -->
+  <script id="pub-data" type="application/json">
+    [
+      {
+        "title": "DÉJÀQ: Open-ended evolution of diverse, learnable and verifiable problems",
+        "authors": "Willem Röpke*, Samuel Coward*, Andrei Lupu, Thomas Foster, Tim Rocktäschel, Jakob Foerster",
+        "venue": "Preprint",
+        "year": 2025,
+        "pdf": "publication/ropke-2025-dejaq/ropke-2025-dejaq.pdf",
+        "bibtex": "@inproceedings{ropke2025dejaq,\n  title = {DÉJÀQ: Open-ended Evolution of Diverse, Learnable and Verifiable Problems},\n  booktitle = {Preprint},\n  author = {Röpke, Willem and Coward, Samuel and Lupu, Andrei and Foster, Thomas and Rocktäschel, Tim and Foerster, Jakob},\n  year = {2025}\n}"
+      },
+      {
+        "title": "Divide and conquer: Provably unveiling the pareto front with multi-objective reinforcement learning",
+        "authors": "Willem Röpke, Mathieu Reymond, Patrick Mannion, Diederik M. Roijers, Ann Nowé, Roxana Rădulescu",
+        "venue": "AAMAS 2025",
+        "year": 2025,
+        "arxiv": "2402.07182",
+        "bibtex": "@inproceedings{ropke2025divide,\n  title = {Divide and Conquer: Provably Unveiling the Pareto Front with Multi-Objective Reinforcement Learning},\n  booktitle = {Proceedings of the 24th International Conference on Autonomous Agents and Multiagent Systems},\n  author = {Röpke, Willem and Reymond, Mathieu and Mannion, Patrick and Roijers, Diederik M and Nowé, Ann and Rădulescu, Roxana},\n  year = {2025}\n}"
+      },
+      {
+        "title": "Distributional multi-objective decision making",
+        "authors": "Willem Röpke, Conor F. Hayes, Patrick Mannion, Enda Howley, Ann Nowé, Diederik M. Roijers",
+        "venue": "IJCAI 2023",
+        "year": 2023,
+        "arxiv": "2305.05560",
+        "bibtex": "@inproceedings{ropke2023distributional,\n  title = {Distributional Multi-Objective Decision Making},\n  booktitle = {Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence},\n  author = {Röpke, Willem and Hayes, Conor F. and Mannion, Patrick and Howley, Enda and Nowé, Ann and Roijers, Diederik M.},\n  year = {2023}\n}"
+      }
+    ]
+  </script>
+
+  <script>
+    /* Build publication cards and toggle BibTeX code block */
+    const pubsEl = document.getElementById('pubs');
+    const data = JSON.parse(document.getElementById('pub-data').textContent);
+
+    data.forEach(p => {
+      const li = document.createElement('li');
+      li.className = 'pub';
+
+      const title = document.createElement('div');
+      title.className = 'pub-title';
+      title.textContent = p.title;
+
+      const authors = document.createElement('div');
+      authors.className = 'pub-authors';
+      authors.textContent = p.authors;
+
+      const venue = document.createElement('div');
+      venue.className = 'pub-venue';
+      venue.textContent = p.venue;
+
+      const actions = document.createElement('div');
+      actions.className = 'pub-actions';
+
+      if (p.arxiv) {
+        const arxivLink = document.createElement('a');
+        arxivLink.href = `https://arxiv.org/abs/${p.arxiv}`;
+        arxivLink.target = '_blank';
+        arxivLink.textContent = 'arXiv';
+        actions.appendChild(arxivLink);
+      }
+
+      if (p.pdf) {
+        const pdfLink = document.createElement('a');
+        pdfLink.href = p.pdf;
+        pdfLink.target = '_blank';
+        pdfLink.textContent = 'PDF';
+        actions.appendChild(pdfLink);
+      }
+
+      const bibBtn = document.createElement('button');
+      bibBtn.textContent = 'BibTeX';
+      actions.appendChild(bibBtn);
+
+      const pre = document.createElement('pre');
+      pre.textContent = p.bibtex;
+      bibBtn.onclick = () => {
+        pre.style.display = pre.style.display === 'block' ? 'none' : 'block';
+      };
+
+      li.appendChild(title);
+      li.appendChild(authors);
+      li.appendChild(venue);
+      li.appendChild(actions);
+      li.appendChild(pre);
+      pubsEl.appendChild(li);
+    });
+  </script>
+</body>
+</html>
+
