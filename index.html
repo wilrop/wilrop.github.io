@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Willem Röpke</title>
-  <!-- External stylesheet -->
   <link rel="stylesheet" href="styles.css">
-  <!-- RSS feed & Open Graph basics -->
   <link rel="alternate" type="application/rss+xml" href="feed.xml" title="RSS Feed">
   <meta property="og:title" content="Willem Röpke - Researcher">
   <meta property="og:description" content="PhD researcher in multi-objective reinforcement learning.">
@@ -61,7 +59,6 @@
     </section>
   </div>
 
-  <!-- Inline publication data for easy maintenance -->
   <script id="pub-data" type="application/json">
     [
       {
@@ -134,21 +131,52 @@
       const bibBtn = document.createElement('button');
       bibBtn.textContent = 'BibTeX';
       actions.appendChild(bibBtn);
+      
+      // ---- NEW: BibTeX block with copy button ----
+      const bibtexBlock = document.createElement('div');
+      bibtexBlock.className = 'bibtex-block';
+
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'copy-btn';
+      copyBtn.textContent = 'Copy';
+      // Tip: You can replace 'Copy' text with an SVG icon for a cleaner look
+      // copyBtn.innerHTML = `<svg>...</svg>`;
 
       const pre = document.createElement('pre');
-      pre.textContent = p.bibtex;
+      const code = document.createElement('code'); // Use <code> for semantics
+      code.textContent = p.bibtex;
+      pre.appendChild(code);
+      
+      bibtexBlock.appendChild(copyBtn);
+      bibtexBlock.appendChild(pre);
+
       bibBtn.onclick = () => {
-        pre.style.display = pre.style.display === 'block' ? 'none' : 'block';
+        bibtexBlock.style.display = bibtexBlock.style.display === 'block' ? 'none' : 'block';
       };
+      
+      copyBtn.onclick = () => {
+        navigator.clipboard.writeText(p.bibtex).then(() => {
+          copyBtn.textContent = 'Copied!';
+          setTimeout(() => {
+            copyBtn.textContent = 'Copy';
+          }, 2000); // Revert back after 2 seconds
+        }).catch(err => {
+          console.error('Failed to copy BibTeX: ', err);
+          copyBtn.textContent = 'Error';
+           setTimeout(() => {
+            copyBtn.textContent = 'Copy';
+          }, 2000);
+        });
+      };
+      // ---- END NEW ----
 
       li.appendChild(title);
       li.appendChild(authors);
       li.appendChild(venue);
       li.appendChild(actions);
-      li.appendChild(pre);
+      li.appendChild(bibtexBlock); // Append the new block
       pubsEl.appendChild(li);
     });
   </script>
 </body>
 </html>
-
